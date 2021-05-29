@@ -9,21 +9,30 @@
         android:id="@+id/navigation_home"
         android:name="com.dicoding.picodiploma.aurisproject.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_recordFragment"
+            app:destination="@id/recordFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_library"
-        android:name="com.dicoding.picodiploma.aurisproject.ui.dashboard.LibraryFragment"
-        android:label="@string/title_library"
-        tools:layout="@layout/fragment_library" >
+        android:id="@+id/navigation_dictionary"
+        android:name="com.dicoding.picodiploma.aurisproject.ui.dictionary.DictionaryFragment"
+        android:label="@string/title_dictionary"
+        tools:layout="@layout/fragment_dictionary" >
         <action
             android:id="@+id/action_navigation_library_to_libraryActivity"
             app:destination="@id/libraryActivity" />
     </fragment>
     <activity
         android:id="@+id/libraryActivity"
-        android:name="com.dicoding.picodiploma.aurisproject.ui.dashboard.LibraryActivity"
+        android:name="com.dicoding.picodiploma.aurisproject.ui.dictionary.DictionaryActivity"
         android:label="activity_library"
-        tools:layout="@layout/activity_library" />
+        tools:layout="@layout/activity_dictionary" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.dicoding.picodiploma.aurisproject.ui.home.record.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
 
 </navigation>

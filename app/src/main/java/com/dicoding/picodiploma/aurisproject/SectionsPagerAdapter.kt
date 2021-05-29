@@ -5,8 +5,8 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.dicoding.picodiploma.aurisproject.ui.dashboard.alphabet.AlphabetFragment
-import com.dicoding.picodiploma.aurisproject.ui.dashboard.number.NumberFragment
+import com.dicoding.picodiploma.aurisproject.ui.dictionary.alphabet.AlphabetFragment
+import com.dicoding.picodiploma.aurisproject.ui.dictionary.number.NumberFragment
 
 class SectionsPagerAdapter (private val mContext: Context, fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 

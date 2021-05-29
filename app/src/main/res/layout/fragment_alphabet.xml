@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.alphabet.AlphabetFragment">
+    tools:context=".ui.dictionary.alphabet.AlphabetFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_alphabet"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_library"/>
+        tools:listitem="@layout/item_dictionary"/>
 
 </FrameLayout>

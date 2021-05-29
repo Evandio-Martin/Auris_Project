@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Auris Project</string>
     <string name="title_home">Home</string>
-    <string name="title_library">Library</string>
     <string name="logo">Auris Logo</string>
     <string name="auris">AURIS</string>
     <string name="start">Start</string>
@@ -10,5 +9,11 @@
     <string name="dummy">A</string>
     <string name="image">Image</string>
     <string name="learn">Learn Sign Language</string>
+    <string name="title_dictionary">Dictionary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instruction">Point The Camera To The Sign Language</string>
+    <string name="welcome">Hi, Welcome To</string>
+    <string name="translation_result">Translation Result Here</string>
 
 </resources>

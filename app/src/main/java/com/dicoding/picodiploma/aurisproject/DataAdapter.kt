@@ -4,22 +4,22 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.dicoding.picodiploma.aurisproject.databinding.ItemLibraryBinding
-import com.dicoding.picodiploma.aurisproject.utils.DataLibrary
+import com.dicoding.picodiploma.aurisproject.databinding.ItemDictionaryBinding
+import com.dicoding.picodiploma.aurisproject.utils.DataDictionary
 
 class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
 
-    private var listDataLibrary = ArrayList<DataLibrary>()
+    private var listDataLibrary = ArrayList<DataDictionary>()
 
-    fun setDataLibrary(library: List<DataLibrary>?){
-        if (library == null) return
+    fun setDataLibrary(dictionary: List<DataDictionary>?){
+        if (dictionary == null) return
         this.listDataLibrary.clear()
-        this.listDataLibrary.addAll(library)
+        this.listDataLibrary.addAll(dictionary)
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemLibraryBinding = ItemLibraryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemLibraryBinding = ItemDictionaryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(itemLibraryBinding)
     }
 
@@ -30,12 +30,12 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int = listDataLibrary.size
 
-    class ViewHolder(private val binding: ItemLibraryBinding): RecyclerView.ViewHolder(binding.root) {
-        fun bind(library: DataLibrary){
+    class ViewHolder(private val binding: ItemDictionaryBinding): RecyclerView.ViewHolder(binding.root) {
+        fun bind(dictionary: DataDictionary){
             with(binding){
-                tvTitle.text = library.title
+                tvTitle.text = dictionary.title
                 Glide.with(itemView.context)
-                    .load(library.image)
+                    .load(dictionary.image)
                     .into(ivLibrary)
             }
         }
