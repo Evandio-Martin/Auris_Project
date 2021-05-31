@@ -13,10 +13,11 @@
         android:layout_marginTop="24dp"
         android:text="@string/instruction"
         android:textAlignment="center"
-        android:textColor="@color/indigo_900"
         android:textSize="21sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="8dp" />
+<!--        android:textColor="@color/indigo_900"-->
+
 
     <TextView
         android:id="@+id/text_translation"
@@ -24,13 +25,13 @@
         android:layout_height="wrap_content"
         android:text="@string/translation_result"
         android:textAlignment="center"
-        android:textColor="@color/material_on_surface_stroke"
+
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_home"
         app:layout_constraintVertical_bias="0.75"
         tools:layout_editor_absoluteX="8dp" />
-
+<!--    android:textColor="@color/material_on_surface_stroke"-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"

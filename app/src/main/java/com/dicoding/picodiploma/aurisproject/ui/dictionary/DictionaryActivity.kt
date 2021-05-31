@@ -2,6 +2,8 @@ package com.dicoding.picodiploma.aurisproject.ui.dictionary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import com.dicoding.picodiploma.aurisproject.R
 import com.dicoding.picodiploma.aurisproject.SectionsPagerAdapter
 import com.dicoding.picodiploma.aurisproject.databinding.ActivityDictionaryBinding
 
@@ -13,6 +15,9 @@ class DictionaryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         this.binding = ActivityDictionaryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Dictionary"
 
         this.binding.library.setOnClickListener {
 
