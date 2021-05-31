@@ -68,25 +68,27 @@ object DataDummy {
         val number = ArrayList<DataDictionary>()
 
         number.add(DataDictionary("0",
-            R.drawable.a))
+            R.drawable.number_0))
         number.add(DataDictionary("1",
-            R.drawable.b))
+            R.drawable.number_1))
         number.add(DataDictionary("2",
-            R.drawable.c))
+            R.drawable.number_2))
         number.add(DataDictionary("3",
-            R.drawable.d))
+            R.drawable.number_3))
         number.add(DataDictionary("4",
-            R.drawable.e))
+            R.drawable.number_4))
         number.add(DataDictionary("5",
-            R.drawable.f))
+            R.drawable.number_5))
         number.add(DataDictionary("6",
-            R.drawable.g))
+            R.drawable.number_6))
         number.add(DataDictionary("7",
-            R.drawable.h))
+            R.drawable.number_7))
         number.add(DataDictionary("8",
-            R.drawable.i))
+            R.drawable.number_8))
         number.add(DataDictionary("9",
-            R.drawable.j))
+            R.drawable.number_9))
+        number.add(DataDictionary("10",
+            R.drawable.number_10))
 
         return number
     }
